@@ -1,25 +1,28 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import hand from './hand.jpg';
 import './App.scss';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Jumbotron from 'react-bootstrap/Jumbotron';
+import Image from 'react-bootstrap/Image';
 
 
 class App extends Component {
   render() {
     return (
       <Container>
-        <Jumbotron>
-          <Row>
-            <Col>
-              <img src={logo} alt="logo" />
-            </Col>
-          </Row>
-        </Jumbotron>
+        <Row className='logo-container'>
+          <Col lg>
+            <img src={logo} alt="logo" />
+          </Col>
+          <Col lg>
+            <Image src={hand} alt="hand" roundedCircle />
+          </Col>
+        </Row>
+        <hr />
         <Row>
-          <Col>
+          <Col sm>
             <Row>
               <Col>
                 <h3>We're Simple</h3>
@@ -31,7 +34,7 @@ class App extends Component {
               </Col>
             </Row>
           </Col>
-          <Col>
+          <Col sm>
             <Row>
               <Col>
                 <h3>We're Basic</h3>
@@ -43,7 +46,7 @@ class App extends Component {
               </Col>
             </Row>
           </Col>
-          <Col>
+          <Col sm>
             <Row>
               <Col>
                 <h3>We're Effective</h3>

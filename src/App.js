@@ -1,26 +1,31 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Jumbotron from 'react-bootstrap/Jumbotron';
+import Media from 'react-bootstrap/Media';
+
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <Container>
+        <Row>
+          <Col>
+            <Jumbotron>
+              <Media>
+                <img src={logo} className="App-logo" alt="logo" />
+                <Media.Body>
+                  <h1>Because petroleum is for your car, not your skin.</h1>
+                  <p>We make skin care products that amaze our customers and are customized to their skin types.</p>
+                </Media.Body>
+              </Media>
+            </Jumbotron>
+          </Col>
+        </Row>
+      </Container>
     );
   }
 }

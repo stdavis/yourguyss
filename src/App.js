@@ -42,7 +42,7 @@ class App extends Component {
             </Row>
             <Row>
               <Col>
-                <p>Let mother nature pamper yoour skin with plant based oils like olive and avocado.</p>
+                <p>Let mother nature pamper your skin with plant based oils like olive and avocado.</p>
               </Col>
             </Row>
           </Col>
@@ -54,7 +54,7 @@ class App extends Component {
             </Row>
             <Row>
               <Col>
-                <p>Our products are petroleum free which allows your skin to breath and thrive. Because petroleum is for yoour car, not your skin.</p>
+                <p>Our products are petroleum free which allows your skin to breath and thrive. Because petroleum is for your car, not your skin.</p>
               </Col>
             </Row>
           </Col>
